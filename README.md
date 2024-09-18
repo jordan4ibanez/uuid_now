@@ -18,7 +18,6 @@ program example
   use :: uuid_now
   implicit none
 
-  if (.true.) return
   do
 
     print*,new_uuid()
