@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <inttypes.h>
+#include <limits.h>
+
+// Modified from: https://stackoverflow.com/a/52845119
+// Thanks, Ry-!
+void print_bits(uint64_t input)
+{
+  printf("%d\n", input);
+  uint64_t i;
+  i = 1UL << (sizeof(input) * CHAR_BIT - 1);
+  while (i > 0)
+  {
+    if (input & i)
+      printf("1");
+    else
+      printf("0");
+    i >>= 1;
+  }
+}
