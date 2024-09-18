@@ -4,7 +4,11 @@ module uuid_now_concurrent
   implicit none
 
 
-  ! private
+  private
+
+  public :: initialize_uuid_concurrent
+  public :: destroy_uuid_concurrent
+  public :: new_uuid_concurrent
 
 
   ! Starts at [UINT64_T] 0
@@ -41,7 +45,9 @@ contains
 
   !* I'm not sure it really needs to be said but,
   !* this is not crypographically safe, lol.
-  function new_uuid() result(uuid)
+  !*
+  !* But this one is thread safe.
+  function new_uuid_concurrent() result(uuid)
     implicit none
 
     integer(c_int64_t) :: uuid
@@ -56,7 +62,7 @@ contains
     current = current + 1
 
     status = thread_unlock_lock(lock_c_loc)
-  end function new_uuid
+  end function new_uuid_concurrent
 
 
 end module uuid_now_concurrent
