@@ -3,12 +3,13 @@ I want a UUID int64 and I want it now!
 
 Extremely simple. If you have one of these in your program, you'll never have overlapping UUIDS.
 
+If you like what I do, and would like to support me: [My Patreon](https://www.patreon.com/jordan4ibanez)
+
 You will receive a ``c_int64_t`` value when ``new_uuid()`` is called.
 
 There is also a concurrent version that needs to be created. (mutex creation)
 
 This project is literally only aimed at game engine development.
-
 
 Here is the single threaded example:
 
@@ -48,3 +49,5 @@ program example_concurrent
 
 end program example_concurrent
 ```
+
+That's about it, really.
