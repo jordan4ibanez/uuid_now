@@ -1,5 +1,5 @@
 name = "uuid_now"
-version = "0.1.0"
+version = "1.0.0"
 license = "MIT"
 author = "jordan4ibanez"
 maintainer = "jordan4ibanez"
@@ -13,6 +13,9 @@ module-naming = false
 
 [install]
 library = false
+
+[dependencies]
+forthread = { git = "https://github.com/jordan4ibanez/forthread" }
 
 [fortran]
 implicit-typing = false
