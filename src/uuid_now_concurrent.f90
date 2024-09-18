@@ -58,7 +58,7 @@ contains
     uuid = current
 
     ! If you were to generate a new UUID every nanosecond,
-    ! it will take 292.471 years to overflow this.
+    ! it will take 584.942 years to overflow this.
     current = current + 1
 
     status = thread_unlock_lock(lock_c_loc)
