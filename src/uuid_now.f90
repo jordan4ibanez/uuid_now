@@ -1,10 +1,15 @@
 module uuid_now
-  implicit none
-  private
+  use, intrinsic :: iso_c_binding
+   implicit none
 
-  public :: say_hello
+
+   private
+
+
+
+
+
 contains
-  subroutine say_hello
-    print *, "Hello, uuid_now!"
-  end subroutine say_hello
+
+
 end module uuid_now
