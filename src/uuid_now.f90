@@ -3,7 +3,9 @@ module uuid_now
   implicit none
 
 
-  ! private
+  private
+
+  public :: new_uuid
 
 
   ! Starts at [UINT64_T] 0
