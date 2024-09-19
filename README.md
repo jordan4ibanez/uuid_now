@@ -5,11 +5,26 @@ Extremely simple. If you have one of these in your program, you'll never have ov
 
 If you like what I do, and would like to support me: [My Patreon](https://www.patreon.com/jordan4ibanez)
 
+### Info:
+
 You will receive a ``c_int64_t`` value when ``new_uuid()`` is called.
 
 There is also a concurrent version that needs to be created. (mutex creation)
 
+### Goal:
+
 This project is literally only aimed at game engine development.
+
+### Add to your project:
+
+In your fpm.toml add:
+
+```toml
+[dependencies]
+forthread = { git = "https://github.com/jordan4ibanez/uuid_now" }
+```
+
+### Example:
 
 Here is the single threaded example:
 
