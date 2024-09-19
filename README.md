@@ -21,7 +21,7 @@ In your fpm.toml add:
 
 ```toml
 [dependencies]
-forthread = { git = "https://github.com/jordan4ibanez/uuid_now" }
+uuid_now = { git = "https://github.com/jordan4ibanez/uuid_now" }
 ```
 
 ### Example:
